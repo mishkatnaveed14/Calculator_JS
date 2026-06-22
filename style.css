@@ -122,3 +122,83 @@ body {
         inset -3px -3px 5px rgba(255, 255, 255, 0.1);
     transform: scale(0.98);
 }
+@media (min-width: 769px) {
+    .calculator {
+        left: 240px;
+        top: 30px;
+    }
+}
+@media (max-width: 800px) {
+    body {
+        background-image: none;
+        background-color: #0d1b3e;
+        padding: 15px;
+    }
+
+    .calculator {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        min-height: 560px;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .container1 {
+        height: 110px;
+    }
+
+    .display {
+        font-size: 1.8rem;
+        height: 65px;
+        line-height: 65px;
+    }
+
+    .container2 {
+        height: 340px;
+        gap: 10px;
+    }
+
+    .container2 .number_btn,
+    .container2 .operator_btn {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .calculator {
+        width: 100%;
+        max-width: 350px;
+        min-height: 500px;
+        border-radius: 20px;
+        left: 0;
+        top: 0;
+    }
+
+    .container1 {
+        height: 90px;
+    }
+
+    .display {
+        height: 55px;
+        line-height: 55px;
+        font-size: 1.4rem;
+        padding-right: 10px;
+    }
+
+    .container2 {
+        height: 300px;
+        gap: 8px;
+    }
+
+    .container2 .number_btn,
+    .container2 .operator_btn {
+        font-size: 18px;
+    }
+}
