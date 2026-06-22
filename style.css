@@ -1,0 +1,124 @@
+body {
+    background-image: url("./image_bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0d1b3e;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.calculator {
+    border: none;
+    width: 440px;
+    height: 570px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+    left: 240px;
+    top: 30px;
+}
+
+.container1 {
+    border: none;
+    width: 90%;
+    height: 120px;
+    background-color: #18224f;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    border: none;
+    width: 90%;
+    height: 70px;
+    background-color: #d8d8d8;
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bold;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+
+.container2 {
+    border: none;
+    width: 90%;
+    height: 360px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.container2 .number_btn,
+.container2 .operator_btn {
+    font-size: 24px;
+    background-color: #62789b;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.1),
+        3px 3px 7px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease;
+}
+
+.container2 .operator_btn {
+    background-color: #6f86ac;
+}
+
+#clear,
+#backspace {
+    background-color: #d86b7d;
+}
+
+#equals {
+    background-color: #5b78a8;
+}
+
+#clear:hover,
+#backspace:hover {
+    background-color: #c25869;
+    box-shadow: 0 0 15px rgba(216, 107, 125, 0.6);
+}
+
+#add {
+    grid-row: span 2;
+}
+
+#equals:hover {
+    background-color: #4a6694;
+    box-shadow: 0 0 15px rgba(91, 120, 168, 0.6);
+}
+
+.container2 .number_btn:hover {
+    background-color: #738bb4;
+    box-shadow: 0 0 15px rgba(115, 139, 180, 0.6);
+}
+
+.container2 .number_btn:active,
+.container2 .operator_btn:active {
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3),
+        inset -3px -3px 5px rgba(255, 255, 255, 0.1);
+    transform: scale(0.98);
+}
